@@ -8,6 +8,7 @@ const categories = [
 ];
 
 const latestPost = {
+  id: 0,
   category: "Tax & VAT",
   title: "Company Tax Return Filing",
   excerpt: "This blog is for informational purposes only and does not constitute formal legal advice. Learn about the latest updates and requirements for company tax return filing in Bangladesh to ensure your business remains compliant.",
@@ -23,27 +24,33 @@ const editorsPicks = [
     id: 1,
     category: "RJSC Return",
     title: "RJSC Return Submission",
+    excerpt: "A comprehensive guide to RJSC return submission.",
     author: "E-Lawyers Expert",
     authorAvatar: "https://picsum.photos/seed/elawyers2/100/100",
     date: "March 24, 2026",
+    readTime: "4 min read",
     image: "https://picsum.photos/seed/rjsc/600/400"
   },
   {
     id: 2,
     category: "Tax & VAT",
     title: "Investment Rebate Limit: Tax Credit on Investments",
+    excerpt: "Understand the investment rebate limits and tax credits.",
     author: "E-Lawyers Expert",
     authorAvatar: "https://picsum.photos/seed/elawyers3/100/100",
     date: "March 16, 2026",
+    readTime: "6 min read",
     image: "https://picsum.photos/seed/rebate/600/400"
   },
   {
     id: 3,
     category: "Tax & VAT",
     title: "VAT Revenue Drivers and 2026 LPG",
+    excerpt: "An analysis of VAT revenue drivers and the 2026 LPG policy.",
     author: "E-Lawyers Expert",
     authorAvatar: "https://picsum.photos/seed/elawyers4/100/100",
     date: "March 16, 2026",
+    readTime: "5 min read",
     image: "https://picsum.photos/seed/vat/600/400"
   }
 ];
@@ -53,28 +60,45 @@ const recentPosts = [
     id: 4,
     category: "Company Registration",
     title: "Company Formation & Business Support Services In Bangladesh",
+    excerpt: "Step-by-step guide to company formation in Bangladesh.",
     author: "E-Lawyers Expert",
     authorAvatar: "https://picsum.photos/seed/elawyers1/100/100",
     date: "March 10, 2026",
+    readTime: "7 min read",
     image: "https://picsum.photos/seed/company/600/400"
   },
   {
     id: 5,
     category: "Legal Services",
     title: "Essential Legal Resources & Tools for Startups",
+    excerpt: "A curated list of legal resources for new startups.",
     author: "E-Lawyers Expert",
     authorAvatar: "https://picsum.photos/seed/elawyers2/100/100",
     date: "March 5, 2026",
+    readTime: "4 min read",
     image: "https://picsum.photos/seed/startup/600/400"
   },
   {
     id: 6,
     category: "Accounting Services",
     title: "Understanding Payroll, TDS, and VAT Calculators",
+    excerpt: "How to effectively use payroll and tax calculators.",
     author: "E-Lawyers Expert",
     authorAvatar: "https://picsum.photos/seed/elawyers3/100/100",
     date: "February 28, 2026",
+    readTime: "5 min read",
     image: "https://picsum.photos/seed/accounting/600/400"
+  },
+  {
+    id: 7,
+    category: "Tax & VAT",
+    title: "Corporate Tax Planning Strategies for 2026",
+    excerpt: "Optimize your corporate tax structure with these effective planning strategies.",
+    author: "E-Lawyers Expert",
+    authorAvatar: "https://picsum.photos/seed/elawyers4/100/100",
+    date: "February 20, 2026",
+    readTime: "8 min read",
+    image: "https://picsum.photos/seed/tax-planning/600/400"
   }
 ];
 
@@ -194,7 +218,7 @@ export default function App() {
             </p>
             
             {/* Search Bar */}
-            <div className="relative max-w-xl mx-auto shadow-lg">
+            <div className="relative max-w-xl mx-auto shadow-lg mb-12">
               <input 
                 type="text" 
                 placeholder="Search legal topics, case studies, or news..." 
@@ -205,6 +229,16 @@ export default function App() {
               <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-legal-gold text-white rounded-md flex items-center justify-center hover:bg-legal-gold-hover transition-colors">
                 <Search size={20} />
               </button>
+            </div>
+
+            {/* Feature Picture */}
+            <div className="mt-12 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+              <img 
+                src="https://picsum.photos/seed/homepage-feature/1200/600" 
+                alt="E-Lawyers Corporate Services" 
+                className="w-full h-auto object-cover" 
+                referrerPolicy="no-referrer" 
+              />
             </div>
           </div>
         </section>
@@ -492,6 +526,58 @@ export default function App() {
                   </tbody>
                 </table>
               </div>
+            </div>
+          </div>
+
+          {/* Related Articles */}
+          <div className="mb-16">
+            <h2 className="font-display text-2xl font-bold text-legal-navy mb-8 flex items-center gap-3 border-b border-gray-200 pb-4">
+              <BookOpen className="text-legal-gold" size={24} />
+              Related Articles
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {allPosts.filter(post => post.category === latestPost.category && post.id !== latestPost.id).slice(0, 3).map(post => (
+                <article 
+                  key={post.id} 
+                  onClick={() => setCurrentView('post')}
+                  className="group flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer h-full"
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute top-4 left-4 bg-legal-navy/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
+                      {post.category}
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="font-display text-xl font-bold text-legal-navy mb-4 leading-snug group-hover:text-legal-gold transition-colors">
+                      {post.title}
+                    </h3>
+                    <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-100">
+                      <div className="flex items-center gap-3">
+                        <img 
+                          src={post.authorAvatar} 
+                          alt={post.author} 
+                          className="w-8 h-8 rounded-full object-cover border border-gray-200"
+                          referrerPolicy="no-referrer"
+                        />
+                        <div className="text-xs">
+                          <p className="font-semibold text-legal-navy">{post.author}</p>
+                          <p className="text-gray-500">{post.date}</p>
+                        </div>
+                      </div>
+                      <span className="text-legal-gold font-medium text-sm flex items-center gap-1 group-hover:text-legal-gold-hover transition-colors">
+                        Read More <ArrowRight size={14} />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
 

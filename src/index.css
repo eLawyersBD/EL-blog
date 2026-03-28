@@ -10,3 +10,7 @@
   --color-legal-gold-hover: #B5952F;
   --color-legal-bg: #F8FAFC;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -3,7 +3,8 @@ import {
   ArrowLeft, Landmark, Layers, PenTool, Stamp, Calculator, Scale, FileText, 
   Languages, Lightbulb, FileSignature, Star, StarHalf, Zap, Award, Building, 
   Pen, FolderOpen, CheckCircle, MessageCircle, Phone, CalendarPlus, ListChecks, 
-  Receipt, Store, Briefcase, AlertTriangle, Facebook, Twitter, Linkedin, Share2
+  Receipt, Store, Briefcase, AlertTriangle, Facebook, Twitter, Linkedin, Share2,
+  BookOpen
 } from 'lucide-react';
 
 export default function CorporateRegistrationPost({ onBack }: { onBack: () => void }) {
@@ -100,6 +101,9 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <h2 id="types" className="text-2xl md:text-3xl font-display font-bold text-legal-navy mt-12 mb-6 border-b border-gray-200 pb-3 flex items-center gap-3 scroll-mt-24">
                   <Layers className="text-legal-gold" size={28} /> কর্পোরেট সত্তার ধরন এবং কৌশলগত নির্বাচন
                 </h2>
+                
+                <img src="https://picsum.photos/seed/post-pic1/800/400" alt="Corporate Registration" className="w-full h-auto rounded-xl my-8 shadow-md" referrerPolicy="no-referrer" />
+                
                 <p>RJSC-এর সাথে পদ্ধতিগত কাজ শুরু করার আগে, উদ্যোক্তাদের অবশ্যই তাদের উদ্যোগের আইনি কাঠামো সম্পর্কে একটি মৌলিক সিদ্ধান্ত নিতে হবে। সত্তার ধরন নির্বাচন দীর্ঘমেয়াদী করের দায় এবং অভ্যন্তরীণ পরিচালনার কাঠামো নির্ধারণ করে।</p>
                 
                 <ul className="list-disc pl-6 space-y-2">
@@ -114,6 +118,9 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <h2 id="name" className="text-2xl md:text-3xl font-display font-bold text-legal-navy mt-12 mb-6 border-b border-gray-200 pb-3 flex items-center gap-3 scroll-mt-24">
                   <PenTool className="text-legal-gold" size={28} /> কর্পোরেট পরিচয়ের সূচনা: নাম ছাড়পত্র (Name Clearance)
                 </h2>
+                
+                <img src="https://picsum.photos/seed/post-pic2/800/400" alt="Legal Documents" className="w-full h-auto rounded-xl my-8 shadow-md" referrerPolicy="no-referrer" />
+                
                 <p>বাংলাদেশে কর্পোরেট গঠনের একেবারে প্রথম ধাপ হলো একটি বৈধ নাম ছাড়পত্র (NC) সার্টিফিকেট সংগ্রহ করা। বিদেশি কোম্পানি এবং অংশীদারি ফার্ম ব্যতীত সকল প্রস্তাবিত আইনি সত্তাকে অবশ্যই তাদের মূল দলিলগুলো তৈরি করার আগে এই সংবিধিবদ্ধ অনুমোদন নিতে হবে। RJSC তাদের ডিজিটাল ডেটাবেস ব্যবহার করে নিশ্চিত করে যে প্রস্তাবিত নামটি বিদ্যমান কোনো কোম্পানির সাথে মিলে না যায়।</p>
 
                 <div className="overflow-x-auto my-6">
@@ -141,6 +148,9 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <h2 id="stamp" className="text-2xl md:text-3xl font-display font-bold text-legal-navy mt-12 mb-6 border-b border-gray-200 pb-3 flex items-center gap-3 scroll-mt-24">
                   <Stamp className="text-legal-gold" size={28} /> অনুমোদিত মূলধনের অর্থনীতি এবং প্রগতিশীল স্ট্যাম্প ডিউটি
                 </h2>
+                
+                <img src="https://picsum.photos/seed/post-pic3/800/400" alt="Business Meeting" className="w-full h-auto rounded-xl my-8 shadow-md" referrerPolicy="no-referrer" />
+                
                 <p>পরবর্তী ধাপে মেমোরেন্ডাম অফ অ্যাসোসিয়েশন (MoA) এবং আর্টিকেলস অফ অ্যাসোসিয়েশন (AoA) প্রস্তুত করতে হয়। MoA কোম্পানির বাহ্যিক সীমানা এবং মূল বাণিজ্যিক উদ্দেশ্য নির্ধারণ করে, আর AoA অভ্যন্তরীণ পরিচালনার নিয়মাবলি নির্ধারণ করে।</p>
                 <p>RJSC নিবন্ধন প্রক্রিয়ার সামগ্রিক আর্থিক কাঠামো কোম্পানির ঘোষিত <strong>"অনুমোদিত শেয়ার মূলধন" (Authorized Capital)</strong> এর ওপর ভিত্তি করে নির্ধারিত হয়। অনুমোদিত মূলধন হলো সেই সর্বোচ্চ শেয়ারের মূল্য যা কোম্পানি তার জীবদ্দশায় ইস্যু করতে পারে, যা পরিশোধিত মূলধনের (Paid-up Capital) চেয়ে ভিন্ন।</p>
 
@@ -248,6 +258,9 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <h2 id="types" className="text-2xl md:text-3xl font-display font-bold text-legal-navy mt-12 mb-6 border-b border-gray-200 pb-3 flex items-center gap-3 scroll-mt-24">
                   <Layers className="text-legal-gold" size={28} /> Taxonomy and Strategic Selection of Corporate Entities
                 </h2>
+                
+                <img src="https://picsum.photos/seed/post-pic1/800/400" alt="Corporate Registration" className="w-full h-auto rounded-xl my-8 shadow-md" referrerPolicy="no-referrer" />
+                
                 <p>Before an enterprise can engage with the fiscal mechanics of the RJSC, the promoters must make a foundational decision regarding the legal architecture of their venture. This dictates authorized capital, registration fees, and long-term tax liabilities.</p>
                 
                 <ul className="list-disc pl-6 space-y-2">
@@ -262,6 +275,9 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <h2 id="name" className="text-2xl md:text-3xl font-display font-bold text-legal-navy mt-12 mb-6 border-b border-gray-200 pb-3 flex items-center gap-3 scroll-mt-24">
                   <PenTool className="text-legal-gold" size={28} /> The Genesis of Corporate Identity: Name Clearance (NC)
                 </h2>
+                
+                <img src="https://picsum.photos/seed/post-pic2/800/400" alt="Legal Documents" className="w-full h-auto rounded-xl my-8 shadow-md" referrerPolicy="no-referrer" />
+                
                 <p>The absolute genesis of corporate formation is the procurement of a valid Name Clearance (NC) certificate. With the exception of Foreign Companies and Partnership Firms, all proposed legal entities must secure this statutory approval prior to drafting their foundational incorporation documents. The RJSC employs a centralized digital database to prevent corporate identity theft and brand confusion.</p>
 
                 <div className="overflow-x-auto my-6">
@@ -289,6 +305,8 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <h2 id="stamp" className="text-2xl md:text-3xl font-display font-bold text-legal-navy mt-12 mb-6 border-b border-gray-200 pb-3 flex items-center gap-3 scroll-mt-24">
                   <Stamp className="text-legal-gold" size={28} /> The Economics of Authorized Capital and Progressive Stamp Duties
                 </h2>
+                
+                <img src="https://picsum.photos/seed/post-pic3/800/400" alt="Business Meeting" className="w-full h-auto rounded-xl my-8 shadow-md" referrerPolicy="no-referrer" />
                 <p>Following Name Clearance, the next phase requires the precise drafting of the Memorandum of Association (MoA) and Articles of Association (AoA). The overarching fiscal architecture of the RJSC registration process is heavily weighted against the entity's declared <strong>"Authorized Share Capital."</strong></p>
 
                 <div className="overflow-x-auto my-6">
@@ -434,10 +452,6 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
                 <li key={item.id}>
                   <a 
                     href={`#${item.id}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
-                    }}
                     className="text-sm text-gray-600 hover:text-legal-gold transition-colors block"
                   >
                     {item.label}
@@ -564,6 +578,81 @@ export default function CorporateRegistrationPost({ onBack }: { onBack: () => vo
           </section>
 
         </aside>
+      </div>
+
+      {/* Related Articles Section */}
+      <div className="mt-16 border-t border-gray-200 pt-12">
+        <h2 className="font-display text-2xl md:text-3xl font-bold text-legal-navy mb-8 flex items-center gap-3">
+          <BookOpen className="text-legal-gold" size={28} />
+          {lang === 'en' ? 'Related Articles' : 'সম্পর্কিত নিবন্ধ'}
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              id: 1,
+              category: "Company Registration",
+              title: "Company Formation & Business Support Services In Bangladesh",
+              author: "E-Lawyers Expert",
+              authorAvatar: "https://picsum.photos/seed/elawyers1/100/100",
+              date: "March 10, 2026",
+              image: "https://picsum.photos/seed/company/600/400"
+            },
+            {
+              id: 2,
+              category: "RJSC Return",
+              title: "RJSC Return Submission",
+              author: "E-Lawyers Expert",
+              authorAvatar: "https://picsum.photos/seed/elawyers2/100/100",
+              date: "March 24, 2026",
+              image: "https://picsum.photos/seed/rjsc/600/400"
+            },
+            {
+              id: 3,
+              category: "Tax & VAT",
+              title: "Company Tax Return Filing",
+              author: "E-Lawyers Expert",
+              authorAvatar: "https://picsum.photos/seed/elawyers3/100/100",
+              date: "March 25, 2026",
+              image: "https://picsum.photos/seed/tax-return/1200/800"
+            }
+          ].map(post => (
+            <article 
+              key={post.id} 
+              className="group flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer h-full"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              <div className="relative h-56 overflow-hidden">
+                <img 
+                  src={post.image} 
+                  alt={post.title} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute top-4 left-4 bg-legal-navy/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
+                  {post.category}
+                </div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-display text-xl font-bold text-legal-navy mb-4 leading-snug group-hover:text-legal-gold transition-colors">
+                  {post.title}
+                </h3>
+                <div className="mt-auto flex items-center gap-3 pt-4 border-t border-gray-100">
+                  <img 
+                    src={post.authorAvatar} 
+                    alt={post.author} 
+                    className="w-10 h-10 rounded-full object-cover border border-gray-200"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="text-sm">
+                    <p className="font-semibold text-legal-navy">{post.author}</p>
+                    <p className="text-gray-500">{post.date}</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   );
